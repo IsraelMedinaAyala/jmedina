@@ -1,13 +1,26 @@
-/* Show it is fixed to the top */
-body {
-    min-height: 75rem;
-    padding-top: 4.5rem;
-  }
+*{margin: 0;
+padding: 0;}
 
-  body {
-    padding-bottom: 20px;
-  }
-  
-  .navbar {
-    margin-bottom: 20px;
-  }
+.nav-item {height: 50px;
+transition: height 2s;
+}
+
+.nav-item:hover {
+    height: 100px; }
+
+   h1{ animation-duration: 2s;
+    animation-name: appear;
+    animation-iteration-count: infinite;}
+
+    @keyframes appear {
+        0% {
+        opacity: 0.5;
+        }
+        100% {
+        opacity: 1;
+        }
+       }
+
+     .taller{
+         text-align: center;
+     }
